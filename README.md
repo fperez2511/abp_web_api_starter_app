@@ -11,6 +11,33 @@ Our requirements are as follows:
 * AWS Cognito JWT tokens for end user authentication.
 * CORS support expected.
 
+### Understanding ABP 3.4.1 NLayer Architecture ###
+
+#### NicoDeWet.WebApi.Application ####
+
+See [Application Services](https://aspnetboilerplate.com/Pages/Documents/Application-Services)
+
+> Application Services are used to expose domain logic to the presentation layer.
+> An Application Service is called from the presentation layer using a DTO (Data Transfer Object) as a parameter.
+> It also uses domain objects to perform some specific business logic and returns a DTO back to the presentation layer.
+> Thus, the presentation layer is completely isolated from Domain layer.
+>
+> In an ideally layered application, the presentation layer never directly works with domain objects.
+
+See [ISessionAppService.cs](3.4.1/aspnet-core/src/NicoDeWet.WebApi.Application/Sessions/ISessionAppService.cs)
+
+See [IAccountAppService.cs](3.4.1/aspnet-core/src/NicoDeWet.WebApi.Application/Authorization/Accounts/IAccountAppService.cs)
+
+#### NicoDeWet.WebApi.Core ####
+
+#### NicoDeWet.WebApi.EntityFrameworkCore ####
+
+#### NicoDeWet.WebApi.Migrator ####
+
+#### NicoDeWet.WebApi.Web.Core ####
+
+#### NicoDeWet.WebApi.Web.Host ####
+
 ## Getting Set Up As A Developer ##
 
 **Development Environment**: macOS High Sierra
@@ -59,7 +86,7 @@ Run **abp_web_api_starter_app/3.4.1/aspnet-core/test/NicoDeWet.WebApi.Tests$ dot
 
 ##### aspnet-core run #####
 
-Although this will bomb out because it cannot connect to SQLServer, try to run up as follows:
+Although this will bomb out because it cannot connect to SQLServer, try to run it up as follows:
 
 ```
 $abp_web_api_starter_app/3.4.1/aspnet-core/src/NicoDeWet.WebApi.Web.Host$ dotnet run
