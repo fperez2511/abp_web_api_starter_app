@@ -48,9 +48,9 @@ I got a number of build errors, some path related and some tool related, so I ab
 
 ##### aspnet-core build #####
 
-Sadly ** $dotnet build ** from that directory also gave me **Build FAILED** (various unmet dependencies). But I [fixed it](https://github.com/aspnetboilerplate/aspnetboilerplate/issues/2831) by adding a NuGet.Config file.
+Sadly **$ dotnet build** from that directory also gave me **Build FAILED** (various unmet dependencies). But I [fixed it](https://github.com/aspnetboilerplate/aspnetboilerplate/issues/2831) by adding a NuGet.Config file.
 
-So, if you check out this repo and issue ** $ dotnet build ** your build should succeed.
+So, if you check out this repo and issue **$ dotnet build** your build should succeed.
 
 ##### aspnet-core run #####
 
