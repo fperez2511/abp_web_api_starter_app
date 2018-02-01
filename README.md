@@ -48,10 +48,19 @@ I got a number of build errors, some path related and some tool related, so I ab
 
 ##### aspnet-core build #####
 
-Sadly **$ dotnet build** from that directory also gave me **Build FAILED** (various unmet dependencies). But I [fixed it](https://github.com/aspnetboilerplate/aspnetboilerplate/issues/2831) by adding a NuGet.Config file.
+Sadly **$ dotnet build** from that directory also gave me **Build FAILED** (various unmet dependencies). But I [fixed it](https://github.com/aspnetboilerplate/aspnetboilerplate/issues/2831)
+by adding a NuGet.Config file ([here is the NuGet.Config reference documentation](https://docs.microsoft.com/en-gb/nuget/reference/nuget-config-file)).
 
 So, if you check out this repo and issue **$ dotnet build** your build should succeed.
 
+##### aspnet-core test #####
+
+Run **abp_web_api_starter_app/3.4.1/aspnet-core/test/NicoDeWet.WebApi.Tests$ dotnet test**
+
 ##### aspnet-core run #####
 
-Work in progress.
+Although this will bomb out because it cannot connect to SQLServer, try to run up as follows:
+
+```
+$abp_web_api_starter_app/3.4.1/aspnet-core/src/NicoDeWet.WebApi.Web.Host$ dotnet run
+```
