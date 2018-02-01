@@ -13,7 +13,17 @@ Our requirements are as follows:
 
 ### Understanding ABP 3.4.1 NLayer Architecture ###
 
-#### NicoDeWet.WebApi.Application ####
+#### NicoDeWet.WebApi.Core ####
+
+#### NicoDeWet.WebApi.EntityFrameworkCore ####
+
+#### NicoDeWet.WebApi.Migrator ####
+
+#### Web.Core Layer - NicoDeWet.WebApi.Web.Core ####
+
+The Web.Core layer depends on the application layer.
+
+#### Application Layer - NicoDeWet.WebApi.Application ####
 
 See [Application Services](https://aspnetboilerplate.com/Pages/Documents/Application-Services)
 
@@ -27,14 +37,6 @@ See [Application Services](https://aspnetboilerplate.com/Pages/Documents/Applica
 See [ISessionAppService.cs](3.4.1/aspnet-core/src/NicoDeWet.WebApi.Application/Sessions/ISessionAppService.cs)
 
 See [IAccountAppService.cs](3.4.1/aspnet-core/src/NicoDeWet.WebApi.Application/Authorization/Accounts/IAccountAppService.cs)
-
-#### NicoDeWet.WebApi.Core ####
-
-#### NicoDeWet.WebApi.EntityFrameworkCore ####
-
-#### NicoDeWet.WebApi.Migrator ####
-
-#### NicoDeWet.WebApi.Web.Core ####
 
 #### NicoDeWet.WebApi.Web.Host ####
 
